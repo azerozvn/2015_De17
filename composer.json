@@ -1,0 +1,7 @@
+{
+    "require": {
+        "dropbox/dropbox-sdk": "1.1.*",
+        "lusitanian/oauth": "~0.3",
+        "j7mbo/twitter-api-php": "dev-master"
+    }
+}
