@@ -3,6 +3,7 @@ require __DIR__.'/vendor/autoload.php';
 
 use OAuth\OAuth1\Service\Flickr;
 use OAuth\Common\Storage\Session;
+use OAuth\Common\Http\Uri\UriFactory;
 use OAuth\Common\Consumer\Credentials;
 use OAuth\Common\Http\Client\CurlClient;
 use OAuth\ServiceFactory;
