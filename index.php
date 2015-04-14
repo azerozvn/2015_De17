@@ -8,6 +8,10 @@
 	<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
+	<div class="container">
+		
+	</div>
+
 	<div class="ui twitter button">
 		<i class="twitter icon"></i>
 			Twitter
@@ -33,5 +37,13 @@
 		<i class="github icon"></i>
 			Github
 	</div>
+
+	
+
+	
+
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="assets/ui/semantic.js"></script>
 </body>
 </html>
