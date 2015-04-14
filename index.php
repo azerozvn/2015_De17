@@ -12,5 +12,9 @@
 		<i class="twitter icon"></i>
 			Twitter
 	</div>
+	<div class="ui github button">
+		<i class="github icon"></i>
+			Github
+	</div>
 </body>
 </html>
