@@ -1,7 +1,7 @@
 /* Github */
 
 .ui.github.button {
-  background-color: #333333;
+  background-color: #555555;
   color: #ffffff;
   text-shadow: none;
   background-image: none;
@@ -9,13 +9,7 @@
 }
 
 .ui.github.button:hover {
-  background-color: #3f5da8;
-  color: #ffffff;
-  text-shadow: none;
-}
-
-.ui.github.button:active {
-  background-color: #314983;
+  background-color: #666666;
   color: #ffffff;
   text-shadow: none;
 }
@@ -35,13 +29,7 @@ i.icon.github:before {
 }
 
 .ui.flickr.button:hover {
-  background-color: #3f5da8;
-  color: #ffffff;
-  text-shadow: none;
-}
-
-.ui.flickr.button:active {
-  background-color: #314983;
+  background-color: #90B47B;
   color: #ffffff;
   text-shadow: none;
 }
@@ -61,13 +49,7 @@ i.icon.flickr:before {
 }
 
 .ui.dropbox.button:hover {
-  background-color: #3f5da8;
-  color: #ffffff;
-  text-shadow: none;
-}
-
-.ui.dropbox.button:active {
-  background-color: #314983;
+  background-color: #E88989;
   color: #ffffff;
   text-shadow: none;
 }
@@ -88,13 +70,7 @@ i.icon.dropbox:before {
 }
 
 .ui.yahoo.button:hover {
-  background-color: #3f5da8;
-  color: #ffffff;
-  text-shadow: none;
-}
-
-.ui.yahoo.button:active {
-  background-color: #314983;
+  background-color: #46286E;
   color: #ffffff;
   text-shadow: none;
 }
@@ -115,13 +91,7 @@ i.icon.yahoo:before {
 }
 
 .ui.foursquare.button:hover {
-  background-color: #3f5da8;
-  color: #ffffff;
-  text-shadow: none;
-}
-
-.ui.foursquare.button:active {
-  background-color: #314983;
+  background-color: #0C46D8;
   color: #ffffff;
   text-shadow: none;
 }

@@ -12,10 +12,6 @@
 		<i class="twitter icon"></i>
 			Twitter
 	</div>
-	<div class="ui github button">
-		<i class="github icon"></i>
-			Github
-	</div>
 	<div class="ui flickr button">
 		<i class="flickr icon"></i>
 			Flickr
@@ -24,6 +20,7 @@
 		<i class="dropbox icon"></i>
 			Dropbox
 	</div>
+	
 	<div class="ui yahoo button">
 		<i class="yahoo icon"></i>
 			Yahoo
@@ -31,6 +28,10 @@
 	<div class="ui foursquare button">
 		<i class="foursquare icon"></i>
 			Foursquare
+	</div>
+	<div class="ui github button">
+		<i class="github icon"></i>
+			Github
 	</div>
 </body>
 </html>
