@@ -1,7 +1,7 @@
 /* Github */
 
 .ui.github.button {
-  background-color: #3b579d;
+  background-color: #333333;
   color: #ffffff;
   text-shadow: none;
   background-image: none;
@@ -20,14 +20,112 @@
   text-shadow: none;
 }
 
-i.icon.github.square:before {
-  content: "\f082";
-}
-
 i.icon.github:before {
   content: "\f09b";
 }
 
-i.icon.github.official {
-  content: "\f230";
+/* Flickr */
+
+.ui.flickr.button {
+  background-color: #6D9654;
+  color: #ffffff;
+  text-shadow: none;
+  background-image: none;
+  box-shadow: 0px 0em 0px 0px rgba(39, 41, 43, 0.15) inset;
+}
+
+.ui.flickr.button:hover {
+  background-color: #3f5da8;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+.ui.flickr.button:active {
+  background-color: #314983;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+i.icon.flickr:before {
+  content: "\f16e";
+}
+
+/* Dropbox */
+
+.ui.dropbox.button {
+  background-color: #BF5252;
+  color: #ffffff;
+  text-shadow: none;
+  background-image: none;
+  box-shadow: 0px 0em 0px 0px rgba(39, 41, 43, 0.15) inset;
+}
+
+.ui.dropbox.button:hover {
+  background-color: #3f5da8;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+.ui.dropbox.button:active {
+  background-color: #314983;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+
+i.icon.dropbox:before {
+  content: "\f16b";
+}
+
+/* Yahoo */
+
+.ui.yahoo.button {
+  background-color: #2D1152;
+  color: #ffffff;
+  text-shadow: none;
+  background-image: none;
+  box-shadow: 0px 0em 0px 0px rgba(39, 41, 43, 0.15) inset;
+}
+
+.ui.yahoo.button:hover {
+  background-color: #3f5da8;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+.ui.yahoo.button:active {
+  background-color: #314983;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+i.icon.yahoo:before {
+  content: "\f19e";
+}
+
+
+/* Foursquare */
+
+.ui.foursquare.button {
+  background-color: #0732a2;
+  color: #ffffff;
+  text-shadow: none;
+  background-image: none;
+  box-shadow: 0px 0em 0px 0px rgba(39, 41, 43, 0.15) inset;
+}
+
+.ui.foursquare.button:hover {
+  background-color: #3f5da8;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+.ui.foursquare.button:active {
+  background-color: #314983;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+i.icon.foursquare:before {
+  content: "\f180";
 }
