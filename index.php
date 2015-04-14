@@ -9,41 +9,86 @@
 </head>
 <body>
 	<div class="container">
-		
+		<div class="ui grid">
+			<div class="two column row">
+				<div class="column">
+					<div class="centered">
+						<div class="ui twitter button">
+							<i class="twitter icon"></i>
+								Twitter
+						</div>
+					</div>	
+				</div>
+				<div class="column">
+					<div class="centered">
+						<div class="ui flickr button">
+							<i class="flickr icon"></i>
+								Flickr
+						</div>
+					</div>	
+				</div>
+			</div>
+			<div class="two column row">
+				<div class="column">
+					<div class="centered">
+						<div class="ui dropbox button">
+							<i class="dropbox icon"></i>
+								Dropbox
+						</div>
+					</div>	
+				</div>
+				<div class="column">
+					<div class="centered">
+						<div class="ui yahoo button">
+							<i class="yahoo icon"></i>
+								Yahoo
+						</div>
+					</div>	
+				</div>
+			</div>
+			<div class="two column row">
+				<div class="column">
+					<div class="centered">
+						<div class="ui github button">
+							<i class="github icon"></i>
+								Github
+						</div>
+					</div>	
+				</div>
+				<div class="column">
+					<div class="centered">
+						<div class="ui foursquare button">
+							<i class="foursquare icon"></i>
+								Foursquare
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
 	</div>
-
-	<div class="ui twitter button">
-		<i class="twitter icon"></i>
-			Twitter
-	</div>
-	<div class="ui flickr button">
-		<i class="flickr icon"></i>
-			Flickr
-	</div>
-	<div class="ui dropbox button">
-		<i class="dropbox icon"></i>
-			Dropbox
-	</div>
-	
-	<div class="ui yahoo button">
-		<i class="yahoo icon"></i>
-			Yahoo
-	</div>
-	<div class="ui foursquare button">
-		<i class="foursquare icon"></i>
-			Foursquare
-	</div>
-	<div class="ui github button">
-		<i class="github icon"></i>
-			Github
-	</div>
-
-	
-
 	
 
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script src="assets/ui/semantic.js"></script>
+	<script type="text/javascript">
+		$(document)
+		  .ready(function(){
+		    $('.demo .example .menu a.item')
+		      .on('click', function() {
+		        if(!$(this).hasClass('dropdown')) {
+		          $(this)
+		            .addClass('active')
+		            .closest('.ui.menu')
+		            .find('.item')
+		              .not($(this))
+		              .removeClass('active')
+		          ;
+		        }
+		      })
+		    ;
+		  })
+		;
+	</script>
 </body>
 </html>

@@ -102,3 +102,18 @@ i.icon.foursquare:before {
 
 /* Elements */
 
+body{
+
+}
+
+.container{
+  width: 800px;
+  margin: 100px auto;
+  position: relative;
+  top: 20%;
+}
+
+.centered{
+  display: table;
+  margin: 0 auto;
+}
