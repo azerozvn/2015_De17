@@ -103,17 +103,39 @@ i.icon.foursquare:before {
 /* Elements */
 
 body{
-
+  background: #ddd;
 }
 
 .container{
-  width: 800px;
-  margin: 100px auto;
-  position: relative;
-  top: 20%;
+  margin: 0 auto;
+  padding: 30px 40px;
+  background: #fff;
+  border-radius: 1em;
+}
+
+.vertical-center{
+  min-height: 100%;
+  min-height: 100vh; 
+  display: flex;
+  align-items: center;
 }
 
 .centered{
   display: table;
-  margin: 0 auto;
+  margin: 0 auto !important;
+}
+
+h1.ui.header{
+  margin-bottom: 5px;
+}
+
+.subtitle{
+  margin-top: 10px;
+  color: #aaa;
+}
+
+/* Typography */
+
+.ui.header, .ui.divider, .login-box, .ui.button{
+  font-family: 'Roboto Slab', sans-serif;
 }
