@@ -75,6 +75,6 @@ switch($step){
     
     case 3:
         $xml = simplexml_load_string($flickrService->request('flickr.test.login'));
-        print "status: ".(string)$xml->attributes()->stat."\n";
+        print "Hello ".(string)$xml->user->username."\n";
         break;
 }

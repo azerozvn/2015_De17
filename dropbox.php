@@ -44,7 +44,7 @@ if (!empty($_GET['code'])) {
     // Send a request with it
     $result = json_decode($dropboxService->request('/account/info'), true);
     // Show some of the resultant data
-    var_dump($result);
+    echo 'Hello '.$result['display_name'];
     exit;
 } elseif (!empty($_GET['go']) && $_GET['go'] === 'go') {
     $url = $dropboxService->getAuthorizationUri();

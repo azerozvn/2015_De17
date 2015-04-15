@@ -17,8 +17,8 @@ $currentUri->setQuery('');
 
 $servicesCredentials = [
     'yahoo' => [
-        'key'    => 'dj0yJmk9MmFZTVpkRmM4TW9ZJmQ9WVdrOWRHeHJhMlpKTjJFbWNHbzlNQS0tJnM9Y29uc3VtZXJzZWNyZXQmeD00OQ--',
-        'secret' => 'c5c91c17419c994dbf6c423a4feefca3781a18a2'
+        'key'    => 'dj0yJmk9Unc0R0ZvWXRHWkV1JmQ9WVdrOVZtbEthVGRFTnpRbWNHbzlNQS0tJnM9Y29uc3VtZXJzZWNyZXQmeD0xOA--',
+        'secret' => 'a1ca9f7f4a5b728fc9054a1b0ad6561d62f91ed8'
     ]
 ];
 

@@ -43,7 +43,7 @@ if (!empty($_GET['oauth_token'])) {
     );
     // Send a request now that we have access token
     $result = json_decode($twitterService->request('account/verify_credentials.json'));
-    echo 'result: <pre>' . print_r($result, true) . '</pre>';
+    echo 'Hello '.$result->name;
 } elseif (!empty($_GET['go']) && $_GET['go'] === 'go') {
     // extra request needed for oauth1 to request a request token :-)
     $token = $twitterService->requestRequestToken();
