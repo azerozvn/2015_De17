@@ -21,19 +21,19 @@
 			<div class="two column row">
 				<div class="column">
 					<div class="login-box centered">
-						<div class="ui twitter button">
+						<a href="twitter.php?go=go" class="ui twitter button">
 							<i class="twitter icon"></i>
 								Twitter
-						</div>
+						</a>
 						<div class="subtitle">Login via Twitter</div>
 					</div>	
 				</div>
 				<div class="column">
 					<div class="login-box centered">
-						<div class="ui flickr button">
+						<a href="flickr.php?step=1" class="ui flickr button">
 							<i class="flickr icon"></i>
 								Flickr
-						</div>
+						</a>
 						<div class="subtitle">Login via Flickr</div>
 					</div>	
 				</div>
@@ -41,19 +41,19 @@
 			<div class="two column row">
 				<div class="column">
 					<div class="login-box centered">
-						<div class="ui dropbox button">
+						<a href="dropbox.php?go=go" class="ui dropbox button">
 							<i class="dropbox icon"></i>
 								Dropbox
-						</div>
+						</a>
 						<div class="subtitle">Login via Dropbox</div>
 					</div>	
 				</div>
 				<div class="column">
 					<div class="login-box centered">
-						<div class="ui yahoo button">
+						<a href="yahoo.php?go=go" class="ui yahoo button">
 							<i class="yahoo icon"></i>
 								Yahoo
-						</div>
+						</a>
 						<div class="subtitle">Login via Yahoo</div>
 					</div>	
 				</div>
@@ -61,19 +61,19 @@
 			<div class="two column row">
 				<div class="column">
 					<div class="login-box centered">
-						<div class="ui github button">
+						<a href="github.php?go=go" class="ui github button">
 							<i class="github icon"></i>
 								Github
-						</div>
+						</a>
 						<div class="subtitle">Login via Github</div>
 					</div>	
 				</div>
 				<div class="column">
 					<div class="login-box centered">
-						<div class="ui foursquare button">
+						<a href="foursquare.php?go=go" class="ui foursquare button">
 							<i class="foursquare icon"></i>
 								Foursquare
-						</div>
+						</a>
 						<div class="subtitle">Login via Foursquare</div>
 					</div>	
 				</div>
