@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Login System</title>
+	<title>Login App</title>
 	<link href='//fonts.googleapis.com/css?family=Roboto+Slab:400,700,300&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="assets/ui/semantic.css">
 	<link rel="stylesheet" href="assets/css/main.css">
@@ -14,7 +14,7 @@
 			<div class="row">
 				<div class="ui header centered">
 					<h1 class="ui header">Login via your Social Account</h1>
-					<div class="sub header">A simple social network login system</div>
+					<div class="sub header">A simple social network login app</div>
 				</div>
 			</div>
 			<div class="ui horizontal divider">pick one</div>
