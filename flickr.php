@@ -75,6 +75,9 @@ switch($step){
     
     case 3:
         $xml = simplexml_load_string($flickrService->request('flickr.test.login'));
-        print "Hello ".(string)$xml->user->username."\n";
+        session_start();
+        $_SESSION['name'] = (string)$xml->user->username;
+        $url = 'success.php';
+        header('Location: ' . $url);
         break;
 }

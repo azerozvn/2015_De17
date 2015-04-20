@@ -36,11 +36,11 @@ if (!empty($_GET['code'])) {
     // This was a callback request from github, get the token
     $gitHub->requestAccessToken($_GET['code']);
     $result = json_decode($gitHub->request('user'), true);
-    echo 'Hello '.$result['login'];
-} elseif (!empty($_GET['go']) && $_GET['go'] === 'go') {
-    $url = $gitHub->getAuthorizationUri();
+    session_start();
+    $_SESSION['name'] = $result['login'];
+    $url = 'success.php';
     header('Location: ' . $url);
 } else {
-    $url = $currentUri->getRelativeUri() . '?go=go';
-    echo "<a href='$url'>Login with Github!</a>";
+    $url = $gitHub->getAuthorizationUri();
+    header('Location: ' . $url);
 }

@@ -36,14 +36,12 @@ $yahooService = $serviceFactory->createService('Yahoo', $credentials, $storage, 
 if (!empty($_GET['code'])) {
     $token = $yahooService->requestAccessToken($_GET['code']);
     // This was a callback request from Yahoo, get the token
-    var_dump($token); die();
+    var_dump($token); die(); //something wrong here
     // Send a request now that we have access token
     $result = json_decode($yahooService->request('profile'));
     echo 'result: <pre>' . print_r($result, true) . '</pre>';
-} elseif (!empty($_GET['go']) && $_GET['go'] === 'go') {
+ 
+} else {
     $url = $yahooService->getAuthorizationUri();
     header('Location: ' . $url);
-} else {
-    $url = $currentUri->getRelativeUri() . '?go=go';
-    echo "<a href='$url'>Login with Yahoo!</a>";
 }

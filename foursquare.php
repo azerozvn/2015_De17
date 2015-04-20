@@ -38,11 +38,12 @@ if (!empty($_GET['code'])) {
     // Send a request with it
     $result = json_decode($foursquareService->request('users/self'), true);
     // Show some of the resultant data
-    echo 'Hello ' . $result['response']['user']['firstName'].' '.$result['response']['user']['lastName'];
-} elseif (!empty($_GET['go']) && $_GET['go'] === 'go') {
-    $url = $foursquareService->getAuthorizationUri();
+    $rs = $result['response']['user']['firstName'].' '.$result['response']['user']['lastName'];
+    session_start();
+    $_SESSION['name'] = $rs;
+    $url = 'success.php';
     header('Location: ' . $url);
 } else {
-    $url = $currentUri->getRelativeUri() . '?go=go';
-    echo "<a href='$url'>Login with Foursquare!</a>";
+    $url = $foursquareService->getAuthorizationUri();
+    header('Location: ' . $url);
 }

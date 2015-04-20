@@ -43,13 +43,13 @@ if (!empty($_GET['oauth_token'])) {
     );
     // Send a request now that we have access token
     $result = json_decode($twitterService->request('account/verify_credentials.json'));
-    echo 'Hello '.$result->name;
-} elseif (!empty($_GET['go']) && $_GET['go'] === 'go') {
-    // extra request needed for oauth1 to request a request token :-)
+    session_start();
+    $_SESSION['name'] = $result->name;
+    $url = 'success.php';
+    header('Location: ' . $url);
+ 
+} else {
     $token = $twitterService->requestRequestToken();
     $url = $twitterService->getAuthorizationUri(array('oauth_token' => $token->getRequestToken()));
     header('Location: ' . $url);
-} else {
-    $url = $currentUri->getRelativeUri() . '?go=go';
-    echo "<a href='$url'>Login with Twitter!</a>";
 }

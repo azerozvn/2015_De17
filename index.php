@@ -21,7 +21,7 @@
 			<div class="two column row">
 				<div class="column">
 					<div class="login-box centered">
-						<a href="twitter.php?go=go" class="ui twitter button">
+						<a href="twitter.php" class="ui twitter button">
 							<i class="twitter icon"></i>
 								Twitter
 						</a>
@@ -41,7 +41,7 @@
 			<div class="two column row">
 				<div class="column">
 					<div class="login-box centered">
-						<a href="dropbox.php?go=go" class="ui dropbox button">
+						<a href="dropbox.php" class="ui dropbox button">
 							<i class="dropbox icon"></i>
 								Dropbox
 						</a>
@@ -50,7 +50,7 @@
 				</div>
 				<div class="column">
 					<div class="login-box centered">
-						<a href="yahoo.php?go=go" class="ui yahoo button">
+						<a href="yahoo.php" class="ui yahoo button">
 							<i class="yahoo icon"></i>
 								Yahoo
 						</a>
@@ -61,7 +61,7 @@
 			<div class="two column row">
 				<div class="column">
 					<div class="login-box centered">
-						<a href="github.php?go=go" class="ui github button">
+						<a href="github.php" class="ui github button">
 							<i class="github icon"></i>
 								Github
 						</a>
@@ -70,7 +70,7 @@
 				</div>
 				<div class="column">
 					<div class="login-box centered">
-						<a href="foursquare.php?go=go" class="ui foursquare button">
+						<a href="foursquare.php" class="ui foursquare button">
 							<i class="foursquare icon"></i>
 								Foursquare
 						</a>

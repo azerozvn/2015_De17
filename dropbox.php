@@ -44,12 +44,13 @@ if (!empty($_GET['code'])) {
     // Send a request with it
     $result = json_decode($dropboxService->request('/account/info'), true);
     // Show some of the resultant data
-    echo 'Hello '.$result['display_name'];
+    session_start();
+    $_SESSION['name'] = $result['display_name'];
+    $url = 'success.php';
+    header('Location: ' . $url);
     exit;
-} elseif (!empty($_GET['go']) && $_GET['go'] === 'go') {
+ 
+} else {
     $url = $dropboxService->getAuthorizationUri();
     header('Location: ' . $url);
-} else {
-    $url = $currentUri->getRelativeUri() . '?go=go';
-    echo "<a href='$url'>Login with Dropbox!</a>";
 }
