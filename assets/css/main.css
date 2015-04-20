@@ -134,8 +134,20 @@ h1.ui.header{
   color: #aaa;
 }
 
+.return-box{
+  width: 450px;
+}
+
+.greetings{
+  margin-bottom: 15px !important;
+}
+
 /* Typography */
 
-.ui.header, .ui.divider, .login-box, .ui.button{
+.ui.header, .ui.divider, .login-box, .ui.button, .return-box{
   font-family: 'Roboto Slab', sans-serif;
+}
+
+.text-center{
+  text-align: center;
 }
