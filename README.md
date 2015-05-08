@@ -1,8 +1,8 @@
 # 2015_De17
 ## Web Programming Assignment
-### Spring 2015 - Đề 17
+##### Spring 2015 - Đề 17
 
-Creator: Long Nguyễn
+Student name: Long Nguyễn  
 Student ID: 51201959
 
 ## Description
@@ -32,6 +32,6 @@ Many thanks to [Semantic-UI](http://semantic-ui.com/ "Semantic-UI") and [Lusitan
 
 ## References
 
-http://semantic-ui.com
+http://semantic-ui.com  
 https://github.com/Lusitanian/PHPoAuthLib
 
