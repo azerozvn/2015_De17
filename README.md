@@ -26,7 +26,9 @@ The target of this assignment is to make a login system which helps user sign in
 | Yahoo 		 | Done	   | Unsuccessful |
 | Foursquare 	 | Done	   | Successful   |
 
-Many thanks to [Semantic-UI](http://semantic-ui.com/ "Semantic-UI") and [Lusitania PHPoAuthLib](https://github.com/Lusitanian/PHPoAuthLib "PHPoAuthLib")
+For best performance, localhost is required
+
+Many thanks to [Semantic-UI](http://semantic-ui.com/ "Semantic-UI") and [Lusitanian PHPoAuthLib](https://github.com/Lusitanian/PHPoAuthLib "PHPoAuthLib")
 
 ## References
 
