@@ -45,6 +45,8 @@ if (!empty($_GET['oauth_token'])) {
     $result = json_decode($twitterService->request('account/verify_credentials.json'));
     session_start();
     $_SESSION['name'] = $result->name;
+    $_SESSION['data'] = $result;
+    setcookie('is_logged_in',1, time() + (86400 * 30), "/");
     $url = 'success.php';
     header('Location: ' . $url);
  

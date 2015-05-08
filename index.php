@@ -1,3 +1,13 @@
+ <?php 
+	if (isset($_COOKIE['is_logged_in'])){
+		echo '<p>Thank you for coming back!</p>';
+		echo '<p>Redirect in 3s</p>';
+		$url = 'success.php';
+		header('refresh: 3; url='.$url);
+	}
+	else{
+ ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -104,3 +114,7 @@
 	</script>
 </body>
 </html>
+
+<?php 
+	}
+ ?>

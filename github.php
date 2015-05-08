@@ -38,6 +38,8 @@ if (!empty($_GET['code'])) {
     $result = json_decode($gitHub->request('user'), true);
     session_start();
     $_SESSION['name'] = $result['login'];
+    $_SESSION['data'] = $result;
+    setcookie('is_logged_in',1, time() + (86400 * 30), "/");
     $url = 'success.php';
     header('Location: ' . $url);
 } else {

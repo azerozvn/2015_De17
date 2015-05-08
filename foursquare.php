@@ -41,6 +41,8 @@ if (!empty($_GET['code'])) {
     $rs = $result['response']['user']['firstName'].' '.$result['response']['user']['lastName'];
     session_start();
     $_SESSION['name'] = $rs;
+    $_SESSION['data'] = $result;
+    setcookie('is_logged_in',1, time() + (86400 * 30), "/");
     $url = 'success.php';
     header('Location: ' . $url);
 } else {
