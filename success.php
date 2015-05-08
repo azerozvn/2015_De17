@@ -12,7 +12,7 @@
  <head>
  	<meta charset="utf-8">
  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
- 	<title>Sucessful login!</title>
+ 	<title>Who are you, dude?</title>
  	<link href='//fonts.googleapis.com/css?family=Roboto+Slab:400,700,300&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
  	<link rel="stylesheet" href="assets/ui/semantic.css">
  	<link rel="stylesheet" href="assets/css/main.css">
@@ -48,7 +48,7 @@
  <head>
  	<meta charset="utf-8">
  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
- 	<title>Sucessful login!</title>
+ 	<title>Successful login!</title>
  	<link href='//fonts.googleapis.com/css?family=Roboto+Slab:400,700,300&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
  	<link rel="stylesheet" href="assets/ui/semantic.css">
  	<link rel="stylesheet" href="assets/css/main.css">
