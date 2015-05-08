@@ -1,6 +1,4 @@
-# 2015_De17
-## Web Programming Assignment
-##### Spring 2015 - Đề 17
+# Web Programming Assignment - Spring 2015 - Đề 17
 
 Student name: Long Nguyễn  
 Student ID: 51201959
