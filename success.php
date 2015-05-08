@@ -59,10 +59,31 @@
  			<div class="row">
  				<div class="column">
 	 				<div class="ui header centered">
-	 					<h1 class="ui header" style="margin-bottom: 1em;">Hello, <?php echo $_SESSION['name']; ?>!</h1>
+	 					<h1 class="ui header" style="margin-bottom: 1em;">Hello, <?php echo $_SESSION['data']['name']; ?>!</h1>
 	 				</div>
 	 				<div class="return-box text-center">
 	 					<p>You have successfully logged in! Thank you for using our app! </p>
+	 					<table class="ui celled striped table">
+						  <thead>
+						    <tr>
+							    <th colspan="2">
+							      Your <?php echo $_SESSION['app'] ?> information
+							    </th>
+						  	</tr>
+						  </thead>
+						  <tbody>
+						  	<?php 
+						  		foreach ($_SESSION['data'] as $key => $val){
+						  	 ?>		<tr>
+								  		<td class="collapsing"><?php echo $key ?></td>
+								  		<td><?php echo $val ?></td>
+								  	</tr>
+								  	
+						  	<?php
+						  	 	}
+						  	 ?>
+						  </tbody>
+						</table>
 	 					<p>Press the button below to return to homepage</p>
 	 					<form action="" method="POST">
 	 						<button name="logout" class="ui primary button">Logout</button>
