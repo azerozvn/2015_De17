@@ -44,9 +44,12 @@ if (!empty($_GET['code'])) {
     // Send a request with it
     $result = json_decode($dropboxService->request('/account/info'), true);
     // Show some of the resultant data
-    session_start();
-    $_SESSION['name'] = $result['display_name'];
-    $_SESSION['data'] = $result;
+    $_SESSION['app'] = 'Dropbox';
+    $_SESSION['data'] = [
+        'id' => $result['uid'],
+        'name' => $result['display_name'],
+        'country' =>$result['country']
+    ];
     setcookie('is_logged_in',1, time() + (86400 * 30), "/");
     $url = 'success.php';
     header('Location: ' . $url);

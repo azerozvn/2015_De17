@@ -36,9 +36,14 @@ if (!empty($_GET['code'])) {
     // This was a callback request from github, get the token
     $gitHub->requestAccessToken($_GET['code']);
     $result = json_decode($gitHub->request('user'), true);
-    session_start();
-    $_SESSION['name'] = $result['login'];
-    $_SESSION['data'] = $result;
+    $_SESSION['app'] = 'Github';
+    $_SESSION['data'] = [
+        'id' => $result['id'],
+        'name' => $result['name'],
+        'login_name' => $result['login'],
+        'email' => $result['email'],
+        'followers' => $result['followers']
+    ];
     setcookie('is_logged_in',1, time() + (86400 * 30), "/");
     $url = 'success.php';
     header('Location: ' . $url);

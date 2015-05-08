@@ -75,9 +75,11 @@ switch($step){
     
     case 3:
         $xml = simplexml_load_string($flickrService->request('flickr.test.login'));
-        session_start();
-        $_SESSION['name'] = (string)$xml->user->username;
-        $_SESSION['data'] = $result;
+        $_SESSION['app'] = 'Flickr';
+        $_SESSION['data'] = [
+            'id' => (string)$xml->user->attributes()->id,
+            'name' => (string)$xml->user->username
+        ];
         setcookie('is_logged_in',1, time() + (86400 * 30), "/");
         $url = 'success.php';
         header('Location: ' . $url);

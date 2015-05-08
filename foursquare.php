@@ -38,10 +38,15 @@ if (!empty($_GET['code'])) {
     // Send a request with it
     $result = json_decode($foursquareService->request('users/self'), true);
     // Show some of the resultant data
-    $rs = $result['response']['user']['firstName'].' '.$result['response']['user']['lastName'];
-    session_start();
-    $_SESSION['name'] = $rs;
-    $_SESSION['data'] = $result;
+    $rs = $result['response']['user'];
+    $_SESSION['app'] = 'Foursquare';
+    $_SESSION['data'] = [
+        'id' => $rs['id'],
+        'name' => $rs['firstName'].' '.$rs['lastName'],
+        'gender' => $rs['gender'],
+        'city' => $rs['homeCity']
+
+    ];
     setcookie('is_logged_in',1, time() + (86400 * 30), "/");
     $url = 'success.php';
     header('Location: ' . $url);
