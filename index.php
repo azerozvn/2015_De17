@@ -121,27 +121,6 @@
 		</div>
 	</div>
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script src="assets/ui/semantic.js"></script>
-	<script type="text/javascript">
-		$(document)
-		  .ready(function(){
-		    $('.demo .example .menu a.item')
-		      .on('click', function() {
-		        if(!$(this).hasClass('dropdown')) {
-		          $(this)
-		            .addClass('active')
-		            .closest('.ui.menu')
-		            .find('.item')
-		              .not($(this))
-		              .removeClass('active')
-		          ;
-		        }
-		      })
-		    ;
-		  })
-		;
-	</script>
 </body>
 </html>
 
