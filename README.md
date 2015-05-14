@@ -30,6 +30,12 @@ For best performance, localhost is required
 
 Many thanks to [Semantic-UI](http://semantic-ui.com/ "Semantic-UI") and [Lusitanian PHPoAuthLib](https://github.com/Lusitanian/PHPoAuthLib "PHPoAuthLib")
 
+## Documentations
+
+This docs has been written in Vietnamese, I'm sorry for the inconvenience.  
+https://dl.dropboxusercontent.com/u/166731453/wp-report.pdf  
+
+
 ## References
 
 http://semantic-ui.com  
